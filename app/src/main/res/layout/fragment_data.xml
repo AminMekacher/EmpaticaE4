@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.empaticae4.DataFragment">
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_dark_background"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Status: "/>
+
+    <TextView
+        android:id="@+id/deviceName"
+        android:layout_below="@id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="Device Name: "/>
+
+    <TextView
+        android:id="@+id/wrist_status_label"
+        android:layout_below="@id/deviceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="-"/>
+
+    <Button
+        android:id="@+id/disconnectButton"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/wrist_status_label"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_round_corners"
+        android:text="STOP STREAMING"
+        android:textColor="#FFFFFF"
+        android:drawableLeft="@drawable/streaming_off"
+        android:paddingLeft="30dip"
+        android:paddingRight="26dip" />
+
+    <LinearLayout
+        android:id="@+id/modeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/disconnectButton"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/researchButton"
+            android:layout_width="155dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/button_round_corners"
+            android:text="RESEARCH MODE"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/normalButton"
+            android:layout_width="155dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/button_round_corners"
+            android:text="NORMAL MODE"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tagText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modeLayout"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Please select the event type you want to register"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/tagLayout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/tagText"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/stressButton"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:background="@drawable/button_round_corners"
+            android:layout_marginLeft="15dp"
+            android:text="STRESS EVENT"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/workoutButton"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:background="@drawable/button_round_corners"
+            android:layout_marginLeft="15dp"
+            android:text="WORKOUT START"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/falseButton"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:background="@drawable/button_round_corners"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="FALSE ALARM"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv1"
+        android:layout_below="@id/tagLayout"
+        android:layout_marginTop="20dp">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

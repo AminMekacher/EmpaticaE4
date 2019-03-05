@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/second_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.empaticae4.DataFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/pulse_graph"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:text="BVP (U.A)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/cardview_dark_background"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/pulse_graph"
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/pulse_graph"
+        android:layout_marginTop="220dp"
+        android:layout_marginRight="10dp"
+        android:text="SKT (°C)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/cardview_dark_background"/>
+
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/temp_graph"
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:layout_below="@id/pulse_graph"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/pulse_graph"
+        android:layout_marginTop="370dp"
+        android:layout_marginRight="10dp"
+        android:text="EDA (μS)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/cardview_dark_background"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/eda_graph"
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:layout_below="@id/temp_graph"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

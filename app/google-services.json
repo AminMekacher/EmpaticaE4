@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "857593070978",
+    "firebase_url": "https://empatica-e4.firebaseio.com",
+    "project_id": "empatica-e4",
+    "storage_bucket": "empatica-e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857593070978:android:58c7806c8b420209",
+        "android_client_info": {
+          "package_name": "com.example.android.empaticae4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857593070978-j1p8vt672fjmt6r20nkvvq2uk447jafm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANOrvXJC1R1ZWG-lzv_lmDhNy12_wHk9Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
